@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --header-color: #010d1d;
+  --background-color: rgb(7, 20, 37);
+  --head-padding: 5px;
+  --padding: 20px;
+  --text-color: #fff;
+  --border-radius: 5px;
+  --btn-back-color: #ff204e;
+}
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  width: 100vw;
+}
+header {
+  background-color: var(--header-color);
+  border-bottom: 1px solid #ff204e;
+  padding: var(--head-padding);
+}
+header h1 {
+  font-size: 30px;
+  margin-left: 10px;
+}
+main {
+  min-height: 78vh;
+  padding: var(--padding);
+  max-width: 800px;
+  margin: 0px auto;
+}
+main form {
+  display: flex;
+  justify-content: center;
+}
+form input[type="text"] {
+  flex-grow: 1;
+}
+form input[type="text"],
+button[type="submit"] {
+  font-size: 16px;
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  padding: calc(var(--padding) / 2);
+}
+button[type="submit"] {
+  background-color: #ff204e;
+  color: var(--text-color);
+  margin-left: 8px;
+  transition: 0.3s;
+}
+button[type="submit"]:hover,
+.result div a:hover {
+  background-color: #e60935;
+  cursor: pointer;
+}
+footer {
+  background-color: var(--header-color);
+  color: var(--text-color);
+  padding: var(--padding);
+  font-size: 15px;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+}
+.result {
+  background-color: #f3f8ff;
+  color: #000;
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+  margin-top: 25px;
+  box-shadow: 15 15px 30px rgb(53, 36, 36);
+}
+.result p {
+  margin-top: 10px;
+}
+.result .pos {
+  font-style: italic;
+  margin-top: 2px;
+  color: #464242;
+}
+.result div {
+  margin-top: 20px;
+}
+.result div a {
+  background-color: #ff204e;
+  color: var(--text-color);
+  margin-left: 8px;
+  transition: 0.3s;
+  text-decoration: none;
+  font-size: 13px;
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  padding: calc(var(--padding) / 3);
+  margin-left: -5px;
+}
+.result li {
+  padding: calc(var(--padding) / 10);
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  main form {
+    flex-direction: column;
+  }
+  button[type="submit"] {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+}
