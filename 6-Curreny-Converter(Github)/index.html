@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter Using Javascript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="converter_container">
+          <h1>Currency Converter  <span style="display: block; font-size: 10px; color: red;"> [ Exchange rates are very faulty do not follow it ]</span></h1>
+         
+          <div class="input_container">
+            <input type="number" value="1" min="1" class="amount" />
+            <select class="fromCurrency"></select>
+          </div>
+
+          <div class="arrow">➜</div>
+          <div class="input_container">
+            <input type="number" class="convertedAmount" disabled />
+            <select class="toCurrency"></select>
+          </div>
+          <div class="result">1 USD = 82 INR</div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

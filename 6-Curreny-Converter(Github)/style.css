@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #03aed2;
+}
+.converter_container {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  padding: 24px 30px;
+  text-align: center;
+}
+.converter_container h1 {
+  font-size: 28px;
+  color: #000;
+  margin-bottom: 40px;
+}
+.converter_container .input_container {
+  border: 2px solid #bbbbbd;
+  border-radius: 4px;
+  margin-block: 20px;
+}
+.converter_container .input_container:focus-within {
+  border-color: #03aed2;
+}
+.converter_container .input_container input,
+.converter_container .input_container select {
+  width: 150px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  padding: 8px;
+  overflow: hidden;
+}
+.converter_container .arrow {
+  transform: rotate(90deg);
+  font-size: 44px;
+}
+.converter_container .result {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+/* RESPONSIVE CODE  */
+@media screen and (max-width: 440px) {
+  .converter_container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .converter_container h1 {
+    font-size: 22px;
+  }
+  .converter_container .input_container {
+    border: none;
+  }
+  .converter_container .input_container input,
+  .converter_container .input_container select {
+    border: 1px solid #ccc;
+    margin-block: 4px;
+    width: 100%;
+  }
+}
